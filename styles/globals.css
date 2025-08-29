@@ -1,0 +1,148 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Green/emerald palette: steel/silver surfaces with emerald accents (light mode) */
+  --background: #f6f8fb; /* soft silver page background */
+  --foreground: #071025; /* deep ink for text */
+  --card: #ffffff; /* card surface */
+  --card-foreground: #071025;
+  --popover: #ffffff;
+  --popover-foreground: #071025;
+  --primary: #10b981; /* emerald 500 */
+  --primary-foreground: #042814; /* dark text on accents */
+  --secondary: #eef6fb; /* pale steel */
+  --secondary-foreground: #0b2540;
+  --muted: #eef3f8;
+  --muted-foreground: #607089;
+  --accent: #16a34a; /* emerald accent */
+  --accent-foreground: #041025;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0; /* subtle border */
+  --input: #ffffff;
+  --ring: #34d399; /* emerald 300 ring */
+  --chart-1: #10b981;
+  --chart-2: #059669;
+  --chart-3: #94a3b8;
+  --chart-4: #cbd5e1;
+  --chart-5: #9fb0c7;
+  --radius: 0.625rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #071025;
+  --sidebar-primary: #10b981;
+  --sidebar-primary-foreground: #001727;
+  --sidebar-accent: #eef6fb;
+  --sidebar-accent-foreground: #071025;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #34d399;
+}
+
+.dark {
+  /* Dark chrome: deep charcoal surfaces with luminous emerald accents */
+  --background: #071025; /* deep navy-black */
+  --foreground: #e6f0f8; /* very light text */
+  --card: #08111a;
+  --card-foreground: #e6f0f8;
+  --popover: #08111a;
+  --popover-foreground: #e6f0f8;
+  --primary: #059669; /* emerald 600 */
+  --primary-foreground: #001427;
+  --secondary: #082233;
+  --secondary-foreground: #e6f0f8;
+  --muted: #071025;
+  --muted-foreground: #9fb0c7;
+  --accent: #34d399;
+  --accent-foreground: #001427;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #0d1b26;
+  --input: #08111a;
+  --ring: #059669;
+  --chart-1: #059669;
+  --chart-2: #10b981;
+  --chart-3: #94a3b8;
+  --chart-4: #34d399;
+  --chart-5: #9fb0c7;
+  --sidebar: #071025;
+  --sidebar-foreground: #e6f0f8;
+  --sidebar-primary: #059669;
+  --sidebar-primary-foreground: #001427;
+  --sidebar-accent: #082233;
+  --sidebar-accent-foreground: #e6f0f8;
+  --sidebar-border: #0d1b26;
+  --sidebar-ring: #059669;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Minimal, compact typography overrides (responsive) */
+  h1 {
+    font-weight: 600 !important;
+    font-size: clamp(1.25rem, 3.2vw, 1.75rem) !important; /* smaller than typical hero */
+    line-height: 1.05 !important;
+  }
+  h2 {
+    font-weight: 600 !important;
+    font-size: clamp(1.125rem, 2.4vw, 1.25rem) !important;
+    line-height: 1.1 !important;
+  }
+  h3, h4, h5, h6 {
+    font-weight: 600 !important;
+    font-size: clamp(1rem, 2vw, 1.125rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  p, label, span, a, li {
+    font-weight: 500 !important;
+    font-size: clamp(0.875rem, 1.6vw, 0.95rem) !important;
+    line-height: 1.4 !important;
+  }
+}
