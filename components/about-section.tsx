@@ -70,7 +70,7 @@ export function AboutSection() {
                 </h2>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                   
-As a certified fitness coach, and nutritionist, I’m passionate about helping people transform their bodies and lives. With 5+ years of hands-on experience and multiple top certifications, I specialize in creating personalized workout programs and customized diet plans designed to achieve sustainable results.
+As a certified fitness coach, nutritionist , rehab & prehab specialist .I’m passionate about helping people transform their bodies and lives. With 5+ years of hands-on experience and multiple top certifications, I specialize in creating personalized workout programs and customized diet plans designed to achieve sustainable results.
 
 My approach focuses on scientific methods combined with practical strategies to help you:
 
@@ -94,29 +94,6 @@ Join me today and start your journey toward becoming the strongest, healthiest, 
                 </p>
               </div>
 
-              {/* Stats */}
-              <div className="grid grid-cols-2 gap-4 sm:gap-6 py-4 sm:py-6">
-                <div className="text-center">
-                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full mb-2 sm:mb-3 mx-auto">
-                    <Users className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                  </div>
-                  <div className="text-xl sm:text-2xl font-bold text-foreground">
-                    <AnimatedCounter end={100} suffix="+" />
-                  </div>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Happy Clients</p>
-                </div>
-
-                <div className="text-center">
-                  <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full mb-2 sm:mb-3 mx-auto">
-                    <Target className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                  </div>
-                  <div className="text-xl sm:text-2xl font-bold text-foreground">
-                    <AnimatedCounter end={95} suffix="%" />
-                  </div>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Success Rate</p>
-                </div>
-              </div>
-
               <Button
                 onClick={() => scrollToSection("#contact")}
                 size="lg"
@@ -132,9 +109,9 @@ Join me today and start your journey toward becoming the strongest, healthiest, 
         <div className="mt-12 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {[
             { icon: Award, number: 5, suffix: "+", label: "Years Experience" },
-            { icon: Users, number: 100, suffix: "+", label: "Clients Trained" },
+            { icon: Users, number: 85, suffix: "+", label: "Clients Trained" },
             { icon: Target, number: 95, suffix: "%", label: "Success Rate" },
-            { icon: Heart, number: 500, suffix: "+", label: "Lives Changed" },
+            { icon: Heart, number: 75, suffix: "+", label: "Lives Changed" },
           ].map((stat, index) => (
             <div
               key={index}

@@ -31,24 +31,43 @@ export function TransformationsSection() {
   const transformations = [
     
     {
-      name: "Dr.Naveen Kumar",
+      name: "Abhishek G",
       age: 28,
-      program: "Weight Loss",
-      duration: "8 months",
-      weightLoss: "15 kg muscle gain",
-      afterImage: "/dr.naveen kumar.jpg",
-      results: ["Gained 15kg muscle", "Increased strength", "Better posture", "Enhanced confidence"],
+      program: "Body Recomposition",
+      duration: "5 months",
+      weightLoss: "lost 11kgs",
+      afterImage: "/trannssss2.jpeg",
+      results: [ "Gained Muscle mass while losing fat", "Increased Strength" ],
     },
    
+     {
+      name: "Vignesh Krishnan",
+      age: 36,
+      program: "Fat Loss",
+      duration: "3 months",
+      weightLoss: "lost fat",
+      afterImage: "/transss1.jpeg",
+      results: [ "Improved posture", "Increased endurance", "Increased energy levels"],
+    },
+      
+    {
+      name: "Dr.Naveen Kumar",
+      age: 48,
+      program: "Weight Loss",
+      duration: "8 months",
+      weightLoss: "lost 18kgs",
+      afterImage: "/dr.naveen kumar.jpg",
+      results: [ "Increased flexibility and mobility", "Increased Strength" ],
+    },
   ]
 
   const testimonials = [
     {
       name: "Rajesh Kumar",
-      age: 42,
+      age: 36,
       program: "Weight Loss",
       rating: 5,
-      image: "/indian-man-headshot.png",
+      image: "/placeholder-user.jpg",
       quote:
         "tej completely transformed my approach to fitness. His personalized program helped me lose 30kg in 8 months. The best part is that I've maintained my weight for over a year now!",
       results: "Lost 30kg in 8 months",
@@ -58,9 +77,9 @@ export function TransformationsSection() {
       age: 29,
       program: "Muscle Building",
       rating: 5,
-      image: "/indian-woman-professional-headshot.png",
+      image: "/placeholder-user.jpg",
       quote:
-        "I never thought I could build muscle as a woman, but tej's guidance proved me wrong. I'm stronger than ever and feel incredibly confident in my own skin.",
+        "I never thought I could build muscle as a woman, but tej's guidance proved me wrong.",
       results: "Gained 8kg lean muscle",
     },
     {
@@ -68,7 +87,7 @@ export function TransformationsSection() {
       age: 38,
       program: "Personal Training",
       rating: 5,
-      image: "/indian-man-fitness-enthusiast-headshot.png",
+      image: "/placeholder-user.jpg",
       quote:
         "Working with tej has been life-changing. Not only did I achieve my fitness goals, but I also learned sustainable habits that I'll carry for life.",
       results: "Complete lifestyle transformation",

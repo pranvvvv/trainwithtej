@@ -181,7 +181,16 @@ export function Footer() {
         {/* Bottom Footer */}
         <div className="py-6 border-t border-muted-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm text-center md:text-left">
-            © 2024 TrainWithTej. All rights reserved. | Designed By PRANAV.
+            © 2024 TrainWithTej. All rights reserved. | Designed By{" "}
+            <a
+              href="http://devlpr.me/shivapranavportfolio.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors duration-300 cursor-pointer"
+            >
+              PRANAV
+            </a>
+            .
           </p>
           <div className="flex items-center gap-6">
             <button
