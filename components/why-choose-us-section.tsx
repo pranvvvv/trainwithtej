@@ -30,8 +30,8 @@ export function WhyChooseUsSection() {
     {
       icon: Trophy,
       title: "Proven Results",
-      description: "Over 500+ successful transformations with documented progress and lasting lifestyle changes.",
-      highlight: "500+ Transformations",
+      description: "Over 85+ successful transformations with documented progress and lasting lifestyle changes.",
+      highlight: "85+ Transformations",
   color: "from-emerald-500 to-emerald-600",
     },
     {
